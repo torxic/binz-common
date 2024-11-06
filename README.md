@@ -40,10 +40,35 @@ To set up and use this project, you need:
   - `PINATA_API_KEY` and `PINATA_API_SECRET`: Pinata credentials for IPFS integration.
   - `KLIMA_TOKEN_ADDRESS` and `TOUCAN_TOKEN_ADDRESS`: Addresses for KLIMA and TCO2 tokens, respectively.
 
-## Setting Up and Running the Project
+## Testing API Routes
 
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd BinZ
-```
+To test the API endpoints, you can use tools like **Postman** or **Curl**:
+
+- **/api/subscribe**: Endpoint for subscribing users to the BinZ service.
+- **/api/reward**: Endpoint for issuing rewards to users for recycling contributions.
+- **/api/records/[userAddress]**: Endpoint for retrieving recycling records of a specific user.
+
+## Usage Flow
+
+1. **Subscription**: Users subscribe to BinZ using KLIMA tokens, which enables them to participate in the recycling rewards program.
+2. **Recycling Rewards**: Users submit recycling data, which is then verified and stored on IPFS. Upon successful verification, users are rewarded with TCO2 tokens.
+3. **Viewing Records**: Users can access their recycling records via the Next.js frontend, where data is stored transparently on IPFS for auditability.
+   
+## Future Enhancements
+
+- **Expanded Recycling Metrics**: Collect additional data points to include other recycling metrics, such as metal and paper recycling.
+- **Enhanced Wallet Support**: Integrate more Web3 wallets to increase accessibility for users.
+- **Token Staking and Liquidity**: Explore opportunities for users to stake TCO2 tokens or add liquidity to carbon pools.
+
+## Contributing
+
+We welcome contributions to help expand and improve BinZ! To contribute:
+
+1. Fork the repository.
+2. Make your changes.
+3. Open a pull request with a summary of your contributions.
+
+## License
+
+This project is licensed under the MIT License.
+
